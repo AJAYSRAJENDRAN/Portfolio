@@ -8,23 +8,24 @@ import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
+
 function Hero() {
   return (
-    <div>
-      <div className="flex justify-center items-start h-screen">
+    <div className= "text-#60a5fa " >
+      <div className="flex justify-center items-start h-screen"  data-aos="fade-up" data-aos-duration="3000">
         <div className="flex flex-col items-center mt-4">
           <img
             className="h-32 w-32 md:h-48 md:w-48 lg:h-64 lg:w-64 flex-none rounded-full  bg-white-50 mt-20"
             src={ajay}
             alt=""
           />
-          <h1 class="text-5xl font-bold leading-6 text-#FAF1CF mt-16  ">
+          <h1 class="text-4xl sm:text-5xl font-bold leading-6 text-yellow-600 mt-16 font-serif  ">
             Ajay S Rajendran
           </h1>
-          <span class="text-2xl font-bold leading-6 text-#FAF1CF mt-12 ">
+          <span class="text-2xl font-bold leading-6 text-white mt-12 ">
             Mernstack Developer
           </span>
-          <div className="flex justify-center mt-12">
+          <div className="flex justify-center mt-12 text-red-600 ">
             <a
               href="https://wa.me/917025016937"
               target="_blank"
@@ -61,11 +62,11 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className=" mt-12  ">
-        <h1 className="text-8xl font-bold  text-#FAF1CF">About</h1>
+      <div className=" mt-12  "  data-aos="fade-right"  data-aos-duration="1500" data-aos-offset="200">
+        <h1 className="text-5xl sm:text-8xl font-bold  text-yellow-600 font-sans hover:font-serif ">About</h1>
 
         <div className=" mt-4">
-          <p className="font-light text-2xl  text-#3F6844 lg:p-4 ">
+          <p className="font-light text-2xl  text-white lg:p-4 ">
             Hello! I'm Ajay S Rajendran, a passionate MERN stack developer with
             a strong <br /> foundation in electronics engineering. My journey
             into the world of technology began <br /> with a diploma in
@@ -82,11 +83,11 @@ function Hero() {
       </div>
 
       <div className=" mt-20 ">
-        <h1 class="text-8xl font-bold flex justify-center items-center text-#FAF1CF ml-4 relative">
+        <h1 class="text-5xl sm:text-8xl font-bold flex justify-center items-center text-yellow-600 ml-4 relative">
           SKILLS
         </h1>
 
-        <div class=" py-24 sm:py-32">
+        <div class=" py-24 sm:py-32 text-white" data-aos="flip-up"data-aos-duration="2500"  >
           <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
               <div class="mx-auto flex max-w-xs flex-col gap-y-4">
@@ -155,29 +156,29 @@ function Hero() {
         </div>
       </div>
       <div className="text-#3F6844 mt-12  ">
-        <h1 className="text-7xl font-bold  text-#FAF1CF ">Education</h1>
-        <div className=" mt-16">
+        <h1 className="text-5xl sm:text-7xl font-bold  text-yellow-600 ">Education</h1>
+        <div className=" mt-16 text-white">
           <p className=" text-#3F6844 lg:p-4 text-2xl ">
-            <b className="text-4xl">Diploma in Electronics Engineering</b>{" "}
+            <b className="text-3xl sm:text-4xl">Diploma in Electronics Engineering</b>{" "}
             <br /> <br />
             Model Polytechnic college vadakara
             <br />
             2018 - 2021
             <br /> <br /> <br />
-            <b className="text-4xl">HSE Commerce</b>
+            <b className="text-3xl sm:text-4xl">HSE Commerce</b>
             <br /> <br />
             B E M Hss Vadakara <br />
             2016-2018
             <br /> <br /> <br />
-            <b className="text-4xl">SSLC</b> <br /> <br />
+            <b className="text-3xl sm:text-4xl">SSLC</b> <br /> <br />
             B E M Hss Vadakara <br />
             2016
           </p>
         </div>
       </div>
       <div className=" mt-12  ">
-        <h1 className="text-7xl font-bold  text-#FAF1CF ">Projects</h1>
-        <div class="overflow-hidden bg-BLACK py-24 sm:py-32">
+        <h1 className="text-7xl font-bold  text-yellow-600 ">Projects</h1>
+        <div class="overflow-hidden bg-BLACK py-24 sm:py-32 text-white"data-aos="zoom-in"data-aos-duration="2500">
           <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
               <div class="lg:pr-8 lg:pt-4">
@@ -194,14 +195,14 @@ function Hero() {
                   </p>
                 </div>
               </div>
-              <img
+              <img 
                 src={oneforall}
                 alt="Product screenshot"
                 class=" mt-12 w-64 h-auto max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-80 md:-ml-4 lg:-ml-0 "
               />
             </div>
           </div>
-          <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-32">
+          <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-32" >
             <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
               <div class="lg:pr-8 lg:pt-4">
                 <div class="lg:max-w-lg">
