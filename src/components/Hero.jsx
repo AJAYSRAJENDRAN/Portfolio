@@ -7,6 +7,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { Button, Card, CardBody, CardFooter, Typography } from "@material-tailwind/react";
 
 
 function Hero() {
@@ -63,9 +64,9 @@ function Hero() {
         </div>
       </div>
       <div className=" mt-12  "  data-aos="fade-right"  data-aos-duration="1500" data-aos-offset="200">
-        <h1 className="text-5xl sm:text-8xl font-bold  text-yellow-600 font-sans hover:font-serif ">About</h1>
+        <h1 className="text-5xl sm:text-8xl font-bold  text-yellow-600 font-sans hover:font-serif sm:ml-6  ">About</h1>
 
-        <div className=" mt-4">
+        <div className=" mt-12">
           <p className="font-light text-2xl  text-white lg:p-4 ">
             Hello! I'm Ajay S Rajendran, a passionate MERN stack developer with
             a strong <br /> foundation in electronics engineering. My journey
@@ -82,7 +83,7 @@ function Hero() {
         </div>
       </div>
 
-      <div className=" mt-20 ">
+      <div className=" mt-40 ">
         <h1 class="text-5xl sm:text-8xl font-bold flex justify-center items-center text-yellow-600 ml-4 relative">
           SKILLS
         </h1>
@@ -155,9 +156,47 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className="text-#3F6844 mt-12  ">
-        <h1 className="text-5xl sm:text-7xl font-bold  text-yellow-600 ">Education</h1>
-        <div className=" mt-16 text-white">
+      <div className="text-#3F6844 mt-40  ">
+        <h1 className="text-5xl sm:text-7xl font-bold  text-yellow-600 sm:ml-6 ">Education</h1>
+        <div className="flex flex-col items-center lg:flex-row justify-between mx-auto max-w-7xl px-6 lg:px-8 mt-32 ">
+      <Card className="mt-6 lg:mt-0 w-96 h-40 bg-white border border-red-600 border-4"data-aos="flip-left" data-aos-duration="1500">
+      <CardBody>
+        <Typography variant="h2" color="black" className="mb-2 mt-2 ml-2 ">
+        Diploma in Electronics Engineering
+        </Typography>
+        <Typography className="ml-2">
+         Model Polytechnic college Vadakara
+       <br /> 2018-2021
+        </Typography>
+      </CardBody>
+      
+    </Card>
+    <Card className="mt-6 lg:mt-0 w-96 h-40 bg-white border border-red-600 border-4"data-aos="flip-left" data-aos-duration="1500">
+      <CardBody>
+        <Typography variant="h2" color="black" className="mb-2 mt-2 ml-2">
+        HSE Commerce
+        </Typography>
+        <Typography className="ml-2">
+        B E M Hss Vadakara 
+       <br />  2016-2018
+        </Typography>
+      </CardBody>
+      
+    </Card>
+    <Card className="mt-6 lg:mt-0 w-96 h-40 bg-white border border-red-600 border-4"data-aos="flip-left"data-aos-duration="1500">
+      <CardBody>
+        <Typography variant="h2" color="black" className="mb-2 mt-2 ml-2">
+        SSLC
+        </Typography>
+        <Typography className="ml-2">
+        B E M Hss Vadakara 
+       <br /> 2016
+        </Typography>
+      </CardBody>
+     
+    </Card>
+      </div>
+        {/* <div className=" mt-16 text-white">
           <p className=" text-#3F6844 lg:p-4 text-2xl ">
             <b className="text-3xl sm:text-4xl">Diploma in Electronics Engineering</b>{" "}
             <br /> <br />
@@ -174,16 +213,16 @@ function Hero() {
             B E M Hss Vadakara <br />
             2016
           </p>
-        </div>
+        </div> */}
       </div>
-      <div className=" mt-12  ">
-        <h1 className="text-7xl font-bold  text-yellow-600 ">Projects</h1>
+      <div className=" mt-40  ">
+        <h1 className="text-7xl font-bold  text-yellow-600 sm:ml-6  ">Projects</h1>
         <div class="overflow-hidden bg-BLACK py-24 sm:py-32 text-white"data-aos="zoom-in"data-aos-duration="2500">
           <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
               <div class="lg:pr-8 lg:pt-4">
                 <div class="lg:max-w-lg">
-                  <p class="mt-2 text-3xl font-bold tracking-tight text-#3F6844 sm:text-4xl">
+                  <p class="mt-2 text-3xl font-bold tracking-tight text-red-600 sm:text-4xl">
                     ONE FOR ALL
                   </p>
                   <p class="mt-6 text-lg leading-8 text-#3F6844">
@@ -206,7 +245,7 @@ function Hero() {
             <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
               <div class="lg:pr-8 lg:pt-4">
                 <div class="lg:max-w-lg">
-                  <p class="mt-2 text-3xl font-bold tracking-tight text-#3F6844 sm:text-4xl">
+                  <p class="mt-2 text-3xl font-bold tracking-tight text-black sm:text-4xl">
                     VIBEE - MUSIC PLAYER
                   </p>
                   <p class="mt-6 text-lg leading-8 text-#3F6844">
@@ -230,7 +269,7 @@ function Hero() {
             <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
               <div class="lg:pr-8 lg:pt-4">
                 <div class="lg:max-w-lg">
-                  <p class="mt-2 text-3xl font-bold tracking-tight text-#3F6844 sm:text-4xl">
+                  <p class="mt-2 text-3xl font-bold tracking-tight text-blue-600 sm:text-4xl">
                     DRIVEMATE
                   </p>
                   <p class="mt-6 text-lg leading-8 text-#3F6844">
@@ -252,6 +291,7 @@ function Hero() {
           </div>
         </div>
       </div>
+     
     </div>
   );
 }
