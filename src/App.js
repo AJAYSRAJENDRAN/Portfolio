@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+
 function App() {
   useEffect(() => {
     document.title = 'Ajay S Rajendran';
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <Hero/>
+     
    
     </div>
   );
