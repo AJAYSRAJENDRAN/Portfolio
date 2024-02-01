@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ajay from "../Assets/Ajay image.png";
 import oneforall from "../Assets/oneforall.png";
 import vibee from "../Assets/vibee.png";
@@ -8,12 +8,28 @@ import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { Card, CardBody, Typography } from "@material-tailwind/react";
-import aiimage from "../Assets/ai image.png";
+import youngman from "../Assets/youngman.png";
+import code from "../Assets/coding.png";
 
 function Hero() {
+   const text="MERN Stack Developer"
+    const [animatedText, setAnimatedText] = useState('');
+  
+    useEffect(() => {
+      let index = 0;
+      const interval = setInterval(() => {
+        if (index <= text.length) {
+          setAnimatedText(text.slice(0, index));
+          index++;
+        } else {
+          clearInterval(interval);
+        }
+      }, 200); // Adjust the interval as needed for the animation speed
+      return () => clearInterval(interval);
+    }, [text]);
   return (
     <div className="text-#60a5fa ">
-      <div
+      {/* <div
         className="flex justify-center items-start h-screen"
         data-aos="fade-up"
         data-aos-duration="3000"
@@ -66,23 +82,58 @@ function Hero() {
             </a>
           </div>
         </div>
+      </div> */}
+     <div className="relative overflow-hidden pt-32 sm:pt-0">
+  <div className="">
+    <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center">
+      <div className="sm:max-w-lg">
+        <h1 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">
+          Hi There!{" "}
+          <span className="wave" role="img" aria-labelledby="wave">
+            👋🏻
+          </span> 
+        </h1>
+        <h1 className="mt-4 text-2xl text-white sm:text-4xl">
+          I'M &nbsp;
+          <strong className="text-purple-600">AJAY S RAJENDRAN</strong>
+        </h1>
+        <h1 className="mt-12 text-2xl text-purple-500 sm:text-4xl">
+          {animatedText}
+        </h1>
       </div>
+      <div className="sm:ml-12">
+        {/* Image grid */}
+        <div className="h-104 w-84 overflow-hidden rounded-lg">
+          <img
+            src={code}
+            alt=""
+            className="h-full w-full object-cover object-left sm:ml-32"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    
+
       <div
         className=" mt-12  "
         data-aos="fade-right"
-        data-aos-duration="1500"
+        data-aos-duration="1000"
         data-aos-offset="200"
       >
-        <h1 className="text-5xl font-bold  text-yellow-600 sm:ml-6 sm:text-7xl ">
-          About
+        <h1 className="text-2xl   text-white ml-8 sm:ml-64 sm:text-4xl mt-32 mb-8  ">
+        LET ME <strong className="text-purple-600">INTRODUCE</strong>  MYSELF
         </h1>
-        <div class="overflow-hidden bg-BLACK py-24 sm:py-32 text-white">
+        <div class="overflow-hidden bg-BLACK py-8 sm:py-12 text-white">
           <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+            <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 sm:gap-y-12 lg:mx-0 lg:max-w-none lg:grid-cols-2">
               <div class="lg:pr-8 lg:pt-4">
                 <div class="lg:max-w-lg">
-                  <p class="mt-6 text-lg leading-8 text-#3F6844">
-                    Hello! I'm Ajay S Rajendran, a passionate MERN stack
+                  <p class=" text-lg leading-8 text-#3F6844 mb-4">
+                    Hello! I'm <strong className="text-purple-600"> Ajay S Rajendran</strong>, a passionate MERN stack
                     developer with a strong foundation in electronics
                     engineering. My journey into the world of technology began
                     with a diploma in electronics engineering, where I gained a
@@ -97,17 +148,17 @@ function Hero() {
                 </div>
               </div>
               <img
-                src={aiimage}
+                src={youngman}
                 alt="Ai model"
-                class="  w-64 h-96 max-w-none sm:w-80 md:-ml-4 lg:-ml-0 "
+                class="  w-48 h-96 max-w-none sm:w-80 md:-ml-4 lg:-ml-0 "
               />
             </div>
           </div>
         </div>
 
         <div className=" mt-40 ">
-          <h1 class="text-5xl sm:text-7xl font-bold flex justify-center items-center text-yellow-600 ml-4 relative">
-            SKILLS
+          <h1 class="text-2xl sm:text-4xl  flex justify-center items-center text-white ml-4 relative">
+           Professional &nbsp;  <strong className="text-purple-600"> Skillset</strong>
           </h1>
 
           <div
@@ -118,63 +169,63 @@ function Hero() {
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
               <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
                 <div class="mx-auto flex max-w-xs flex-col gap-y-4  rounded-md py-4 px-4 border-2 border-purple-600  shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
-                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-5xl">
+                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
                     Nodejs
                   </dd>
                 </div>
                 <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
-                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-5xl">
+                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
                     Express js
                   </dd>
                 </div>
                 <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
-                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-5xl">
+                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
                     React js
                   </dd>
                 </div>
 
                 <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
-                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-5xl">
+                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
                     MongoDB
                   </dd>
                 </div>
                 <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
-                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-5xl">
+                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
                     Javascript
                   </dd>
                 </div>
                 <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
-                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-5xl">
+                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
                     HTML
                   </dd>
                 </div>
                 <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
-                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-5xl">
+                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
                     CSS
                   </dd>
                 </div>
                 <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
-                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-5xl">
+                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
                     Bootstrap
                   </dd>
                 </div>
                 <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
-                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-5xl">
+                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
                     Material UI
                   </dd>
                 </div>
                 <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
-                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-5xl">
+                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
                     Tailwind CSS
                   </dd>
                 </div>
                 <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
-                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-5xl">
+                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
                     Redux
                   </dd>
                 </div>
                 <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
-                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-5xl">
+                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
                     Git
                   </dd>
                 </div>
