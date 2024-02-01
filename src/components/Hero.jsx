@@ -106,7 +106,7 @@ function Hero() {
         </div>
 
         <div className=" mt-40 ">
-          <h1 class="text-5xl sm:text-8xl font-bold flex justify-center items-center text-yellow-600 ml-4 relative">
+          <h1 class="text-5xl sm:text-7xl font-bold flex justify-center items-center text-yellow-600 ml-4 relative">
             SKILLS
           </h1>
 
@@ -117,63 +117,63 @@ function Hero() {
           >
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
               <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
-                <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4  rounded-md py-4 px-4 border-2 border-purple-600  shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
                   <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-5xl">
                     Nodejs
                   </dd>
                 </div>
-                <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
                   <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-5xl">
                     Express js
                   </dd>
                 </div>
-                <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
                   <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-5xl">
                     React js
                   </dd>
                 </div>
 
-                <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
                   <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-5xl">
                     MongoDB
                   </dd>
                 </div>
-                <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
                   <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-5xl">
                     Javascript
                   </dd>
                 </div>
-                <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
                   <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-5xl">
                     HTML
                   </dd>
                 </div>
-                <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
                   <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-5xl">
                     CSS
                   </dd>
                 </div>
-                <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
                   <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-5xl">
                     Bootstrap
                   </dd>
                 </div>
-                <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
                   <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-5xl">
                     Material UI
                   </dd>
                 </div>
-                <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
                   <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-5xl">
                     Tailwind CSS
                   </dd>
                 </div>
-                <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
                   <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-5xl">
                     Redux
                   </dd>
                 </div>
-                <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
                   <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-5xl">
                     Git
                   </dd>
@@ -188,7 +188,7 @@ function Hero() {
           </h1>
           <div className="flex flex-col items-center lg:flex-row justify-between mx-auto max-w-7xl px-6 lg:px-8 mt-32 ">
             <Card
-              className="mt-6 lg:mt-0 w-96 h-40 bg-white border border-red-600 border-4"
+              className="mt-6 lg:mt-0 w-96 h-64 bg-white border border-red-600 border-4"
               data-aos="flip-left"
               data-aos-duration="1500"
             >
@@ -207,7 +207,7 @@ function Hero() {
               </CardBody>
             </Card>
             <Card
-              className="mt-6 lg:mt-0 w-96 h-40 bg-white border border-red-600 border-4"
+              className="mt-6 lg:mt-0 w-96 h-64 bg-white border border-red-600 border-4"
               data-aos="flip-left"
               data-aos-duration="1500"
             >
@@ -226,7 +226,7 @@ function Hero() {
               </CardBody>
             </Card>
             <Card
-              className="mt-6 lg:mt-0 w-96 h-40 bg-white border border-red-600 border-4"
+              className="mt-6 lg:mt-0 w-96 h-64 bg-white border border-red-600 border-4"
               data-aos="flip-left"
               data-aos-duration="1500"
             >
@@ -257,7 +257,7 @@ function Hero() {
           >
             <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full h-full flex flex-col justify-center items-center rounded-md py-4 px-4 border-2 border-gray-600 lg:border-none">
               <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-                <div class="lg:pr-8 lg:pt-4 ">
+                <div class="lg:pr-8 lg:pt-4  ">
                   <div class="lg:max-w-lg">
                     <p class="mt-2 text-3xl font-bold tracking-tight text-red-600 sm:text-4xl">
                       ONE FOR ALL
