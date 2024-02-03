@@ -260,32 +260,32 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="text-#3F6844 mt-40  ">
-          <h1 className="text-5xl sm:text-7xl font-bold  text-yellow-600 sm:ml-6 ">
-            Education
+        <div className="text-white mt-40  ">
+          <h1 className="text-2xl sm:text-4xl font-bold  text-white sm:ml-6 ">
+          Academic <strong className="text-purple-600">Background</strong> 
           </h1>
           <div className="flex flex-col items-center lg:flex-row justify-between mx-auto max-w-7xl px-6 lg:px-8 mt-32 ">
             <Card
-              className="mt-6 lg:mt-0 w-96 h-64 bg-white border border-red-600 border-4"
+              className=" bg-282c34 mt-6 lg:mt-0 w-96 h-64 b border-gray-600 border-4"
               data-aos="flip-left"
               data-aos-duration="1500"
             >
               <CardBody>
                 <Typography
-                  variant="h2"
-                  color="black"
+                  variant="h3"
+                  color="white"
                   className="mb-2 mt-2 ml-2 "
                 >
                   Diploma in Electronics Engineering
                 </Typography>
-                <Typography className="ml-2">
+                <Typography className="ml-2 opacity-70">
                   Model Polytechnic college Vadakara
                   <br /> 2018-2021
                 </Typography>
               </CardBody>
             </Card>
             <Card
-              className="mt-6 lg:mt-0 w-96 h-64 bg-white border border-red-600 border-4"
+              className="bg-282c34 mt-6 lg:mt-0 w-96 h-64  border border-gray-600 border-4"
               data-aos="flip-left"
               data-aos-duration="1500"
             >
@@ -297,14 +297,14 @@ function Hero() {
                 >
                   HSE Commerce
                 </Typography>
-                <Typography className="ml-2">
+                <Typography className="ml-2 opacity-70">
                   B E M Hss Vadakara
                   <br /> 2016-2018
                 </Typography>
               </CardBody>
             </Card>
             <Card
-              className="mt-6 lg:mt-0 w-96 h-64 bg-white border border-red-600 border-4"
+              className=" bg-282c34 mt-6 lg:mt-0 w-96 h-64  border border-gray-600 border-4"
               data-aos="flip-left"
               data-aos-duration="1500"
             >
@@ -316,7 +316,7 @@ function Hero() {
                 >
                   SSLC
                 </Typography>
-                <Typography className="ml-2">
+                <Typography className="ml-2 opacity-70">
                   B E M Hss Vadakara
                   <br /> 2016
                 </Typography>
@@ -453,13 +453,13 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className="mt-40 flex justify-center">
-        <div className="w-full h-full flex flex-col justify-center items-center rounded-md py-4 px-4 border-2 border-red-600 lg:rounded-full">
-          <h1 className="text-5xl font-bold text-yellow-600 sm:text-6xl ">
-            CONTACT ME
+      <div className="mt-24 flex justify-center">
+        <div className="w-full h-full flex flex-col justify-center items-center ">
+          <h1 className="text-2xl font-bold text-white sm:text-4xl ">
+            FIND <strong className="text-purple-600">ME</strong>  ON
           </h1>
           <div>
-            <p class="mt-16 text-lg leading-8 text-white ">
+            {/* <p class="mt-16 text-lg leading-8 text-white ">
               Phone &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 7025016937 <br />
               Email &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               ajayharigovindam@gmail.com
@@ -468,11 +468,26 @@ function Hero() {
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               Vadakara,Kozhikode <br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Kerala
-            </p>
+            </p> */}
+             <div className="flex justify-center mt-12">
+                           
+                            <a href="https://www.instagram.com/ajay_s_rajendran/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-800 mr-4  text-5xl">
+                                <FaInstagram />
+                            </a>
+                            <a href="https://wa.me/7025016937" target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-800 mr-4 text-5xl">
+                                <FaWhatsapp />
+                            </a>
+                            <a href="https://www.linkedin.com/in/ajay-s-rajendran-30b278218?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-800 mr-4 text-5xl">
+                                < FaLinkedin />
+                            </a>
+                            <a href="https://github.com/AJAYSRAJENDRAN" target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-800 mr-4 text-5xl">
+                                < FaGithub />
+                            </a>
+                        </div>
           </div>
         </div>
       </div>
-      <div className="mt-12" />
+      <div className="mt-32" />
       <div class="text-center p-6 bg-black footer">
         <span class="text-white">&copy; 2024 Copyright - </span>
         <a class="link-underline text-white font-bold" href="">Ajay S Rajendran</a>
