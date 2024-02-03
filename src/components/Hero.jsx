@@ -7,10 +7,22 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { Card, CardBody, Typography } from "@material-tailwind/react";
+import { Button, Card, CardBody, CardFooter, CardHeader, Typography } from "@material-tailwind/react";
 import youngman from "../Assets/youngman.png";
 import code from "../Assets/coding.png";
-
+import node from "../Assets/node.png";
+import html from "../Assets/html.png";
+import js from "../Assets/javascript.png";
+import mongodb from "../Assets/mongodb.png";
+import redux from "../Assets/redux.png";
+import react from "../Assets/react.png";
+import tailwind from "../Assets/tailwind.png";
+import css from "../Assets/css.png";
+import expressjs from "../Assets/express.png";
+import git from "../Assets/github.png";
+import materialui from "../Assets/materialui.png";
+import bootstrap from "../Assets/bootstrap.png";
+import Navbar from "./Navbar";
 function Hero() {
    const text="MERN Stack Developer"
     const [animatedText, setAnimatedText] = useState('');
@@ -28,7 +40,10 @@ function Hero() {
       return () => clearInterval(interval);
     }, [text]);
   return (
+    <div> 
+   
     <div className="text-#60a5fa ">
+     
       {/* <div
         className="flex justify-center items-start h-screen"
         data-aos="fade-up"
@@ -168,64 +183,76 @@ function Hero() {
           >
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
               <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
-                <div class="mx-auto flex max-w-xs flex-col gap-y-4  rounded-md py-4 px-4 border-2 border-purple-600  shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
-                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
+                <div class="w-64 mx-auto flex max-w-xs flex-col gap-y-4  rounded-md py-4 px-4 border-2 border-purple-600  shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
+                 <img src={node} alt=""  className="w-20 mx-auto" />
+                  <dd class=" text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
                     Nodejs
                   </dd>
                 </div>
-                <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
-                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
+                <div class="w-64 mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
+                <img src={expressjs} alt=""  className="w-20 mx-auto" />
+                  <dd class=" text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
                     Express js
                   </dd>
                 </div>
-                <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
-                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
+                <div class="w-64 mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
+                <img src={react} alt=""  className="w-20 mx-auto" />
+                  <dd class=" text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
                     React js
                   </dd>
                 </div>
 
-                <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
-                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
+                <div class="w-64 mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
+                <img src={mongodb} alt=""  className="w-20 mx-auto" />
+                  <dd class=" text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
                     MongoDB
                   </dd>
                 </div>
-                <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
-                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
+                <div class="w-64 mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
+                <img src={js} alt=""  className="w-20 mx-auto" />
+                  <dd class=" text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
                     Javascript
                   </dd>
                 </div>
-                <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
-                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
+                <div class="w-64 mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
+                <img src={html} alt=""  className="w-20 mx-auto" />
+                  <dd class=" text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
                     HTML
                   </dd>
                 </div>
-                <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
-                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
+                <div class="w-64 mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
+                <img src={css} alt=""  className="w-20 mx-auto" />
+                  <dd class=" text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
                     CSS
                   </dd>
                 </div>
-                <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
-                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
+                <div class="w-64 mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
+                <img src={bootstrap} alt=""  className="w-20 mx-auto" />
+                  <dd class=" text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
                     Bootstrap
                   </dd>
                 </div>
-                <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
-                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
+                <div class="w-64 mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
+                <img src={materialui} alt=""  className="w-20 mx-auto" />
+                  <dd class=" text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
                     Material UI
                   </dd>
                 </div>
-                <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
-                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
+                <div class="w-64 mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
+                <img src={tailwind} alt=""  className="w-20 mx-auto" />
+                  <dd class=" text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
                     Tailwind CSS
                   </dd>
                 </div>
-                <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
-                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
+                <div class="w-64 mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
+                <img src={redux} alt=""  className="w-20 mx-auto" />
+                  <dd class=" text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
                     Redux
                   </dd>
                 </div>
-                <div class="mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
-                  <dd class="order-first text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
+                <div class="w-64 mx-auto flex max-w-xs flex-col gap-y-4 rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300">
+                <img src={git} alt=""  className="w-20 mx-auto" />
+                  <dd class=" text-3xl font-semibold tracking-tight text-#3F6844 sm:text-3xl">
                     Git
                   </dd>
                 </div>
@@ -297,87 +324,132 @@ function Hero() {
             </Card>
           </div>
         </div>
-        <div className=" mt-40  ">
-          <h1 className="text-7xl font-bold  text-yellow-600 sm:ml-6  ">
-            Projects
-          </h1>
+        <div className=" mt-40 ">
+          <h1 class="text-2xl sm:text-4xl  flex justify-center items-center text-white ml-4 relative">
+          My Recent&nbsp;  <strong className="text-purple-600"> Works</strong>
+          </h1> <br />
+          <p style={{ color: "white",textAlign:"center" }}>
+          Here are a few projects I've worked on recently.
+        </p>
           <div
-            class="overflow-hidden bg-BLACK py-24 sm:py-32 text-white"
+            class=" flex flex-col items-center lg:flex-row justify-between mx-auto max-w-7xl px-6 lg:px-8  overflow-hidden  py-24 sm:py-32  "
             data-aos="zoom-in"
             data-aos-duration="2500"
           >
-            <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full h-full flex flex-col justify-center items-center rounded-md py-4 px-4 border-2 border-gray-600 lg:border-none">
-              <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-                <div class="lg:pr-8 lg:pt-4  ">
-                  <div class="lg:max-w-lg">
-                    <p class="mt-2 text-3xl font-bold tracking-tight text-red-600 sm:text-4xl">
-                      ONE FOR ALL
-                    </p>
-                    <p class="mt-6 text-lg leading-8 text-#3F6844">
-                      "One For All" is a full-stack web application developed as
+           
+            <Card className="w-96 bg-282c34 text-white rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300 mb-24 ">
+      <CardHeader shadow={false} floated={false} className="h-48">
+        <img
+          src={oneforall}
+          alt="card-image"
+          className="  object-cover"
+        />
+      </CardHeader>
+      <CardBody>
+        <div className="mb-2  text-center text-bold ">
+          <Typography color="blue-g" className="font-medium">
+          ONE FOR ALL
+          </Typography>
+         
+        </div>
+        <Typography
+          variant="small"
+          color="gray"
+          className="font-normal opacity-50"
+        >
+          "One For All" is a full-stack web application developed as
                       part of my academic projects. It serves as an on-demand
                       service booking platform, connecting customers with
                       professionals such as photographers and house cleaners
                       seamlessly through a web application interface.
-                    </p>
-                  </div>
-                </div>
-                <img
-                  src={oneforall}
-                  alt="Product screenshot"
-                  class=" mt-12 w-64 h-auto max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-80 md:-ml-4 lg:-ml-0 "
-                />
-              </div>
-            </div>
-          
-            <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-32  w-full h-full flex flex-col justify-center items-center rounded-md py-4 px-4 border-2 border-gray-600 lg:border-none">
-              <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-                <div class="lg:pr-8 lg:pt-4">
-                  <div class="lg:max-w-lg">
-                    <p class="mt-2 text-3xl font-bold tracking-tight text-black sm:text-4xl">
-                      VIBEE - MUSIC PLAYER
-                    </p>
-                    <p class="mt-6 text-lg leading-8 text-#3F6844">
-                      Developed Vibee Music Player using MERN stack, enabling
+        </Typography>
+      </CardBody>
+      <CardFooter className="pt-28">
+        <Button
+          ripple={false}
+          fullWidth={true}
+          className="bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
+        >
+          Github
+        </Button>
+      </CardFooter>
+    </Card>
+    <Card className="w-96 bg-282c34 text-white rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300 mb-24">
+      <CardHeader shadow={false} floated={false} className="h-48">
+        <img
+          src={vibee}
+          alt="card-image"
+          className="h-full w-full object-cover"
+        />
+      </CardHeader>
+      <CardBody>
+        <div className="mb-2 text-center text-bold ">
+          <Typography color="blue-gray" className="font-medium">
+          VIBEE - MUSIC PLAYER
+          </Typography>
+         
+        </div>
+        <Typography
+          variant="small"
+          color="gray"
+          className="font-normal opacity-50"
+        >
+           Developed Vibee Music Player using MERN stack, enabling
                       seamless music streaming and management. Implemented
                       features for user authentication, playlist creation, and
                       dynamic music playback. Leveraged MongoDB for data
                       storage, Express for backend APIs, React for interactive
                       frontend, and Node.js for server-side functionality
-                    </p>
-                  </div>
-                </div>
-                <img
-                  src={vibee}
-                  alt="Product screenshot"
-                  class=" mt-12 w-64 h-auto max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-80 md:-ml-4 lg:-ml-0 "
-                />
-              </div>
-            </div>
-            <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-32  w-full h-full flex flex-col justify-center items-center rounded-md py-4 px-4 border-2 border-gray-600 lg:border-none">
-              <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-                <div class="lg:pr-8 lg:pt-4">
-                  <div class="lg:max-w-lg">
-                    <p class="mt-2 text-3xl font-bold tracking-tight text-blue-600 sm:text-4xl">
-                      DRIVEMATE
-                    </p>
-                    <p class="mt-6 text-lg leading-8 text-#3F6844">
-                      Developed DriveMate, a MERN-based car rental app with a
+        </Typography>
+      </CardBody>
+      <CardFooter className="pt-0">
+        <Button
+          ripple={false}
+          fullWidth={true}
+          className="bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
+        >
+          Github
+        </Button>
+      </CardFooter>
+    </Card>
+    <Card className="w-96 bg-282c34 text-white rounded-md py-4 px-4 border-2 border-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105 transition duration-300 mb-24">
+      <CardHeader shadow={false} floated={false} className="h-48">
+        <img
+          src={drivemate}
+          alt="card-image"
+          className="h-full w-full object-cover"
+        />
+      </CardHeader>
+      <CardBody>
+        <div className="mb-2  ">
+          <Typography color="blue-gray" className="font-medium text-center text-bold">
+          DRIVEMATE
+          </Typography>
+         
+        </div>
+        <Typography
+          variant="small"
+          color="gray"
+          className="font-small opacity-50 "
+        >
+           Developed DriveMate, a MERN-based car rental app with a
                       user-friendly React interface for easy browsing and
                       booking. Utilized MongoDB for robust data management,
                       including vehicle details and user profiles. Implemented
                       secure authentication using Node.js and Express.js,
                       resulting in a seamless and efficient rental experience.
-                    </p>
-                  </div>
-                </div>
-                <img
-                  src={drivemate}
-                  alt="Product screenshot"
-                  class=" mt-12 w-64 h-auto max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-80 md:-ml-4 lg:-ml-0 "
-                />
-              </div>
-            </div>
+        </Typography>
+      </CardBody>
+      <CardFooter className="pt-0">
+        <Button
+          ripple={false}
+          fullWidth={true}
+          className="bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
+        >
+          Github
+        </Button>
+      </CardFooter>
+    </Card>
           </div>
         </div>
       </div>
@@ -401,6 +473,11 @@ function Hero() {
         </div>
       </div>
       <div className="mt-12" />
+      <div class="text-center p-6 bg-black footer">
+        <span class="text-white">&copy; 2024 Copyright - </span>
+        <a class="link-underline text-white font-bold" href="">Ajay S Rajendran</a>
+      </div>
+    </div>
     </div>
   );
 }
